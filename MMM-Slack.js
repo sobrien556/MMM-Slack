@@ -46,18 +46,19 @@ Module.register('MMM-Slack',{
 		messageElement.style.wordSpacing = this.config.wordSpacing;
 		messageElement.style.letterSpacing = this.config.letterSpacing;
 		messageElement.style.lineHeight = this.config.lineHeight;
-		if(this.slackMessages.length > 0)
-			
-		{
-            var randomMessageId = Math.floor(Math.random() * this.slackMessages.length);
-            messageElement.innerHTML = this.slackMessages[randomMessageId].message;
-            if(this.config.showUserName) {
-                var userElement = document.createElement('p');
-                userElement.className = 'user';
-		userElement.style.fontSize = this.config.fontSize;
-                userElement.innerHTML = '@' + this.slackMessages[randomMessageId].user;
-			    messageElement.appendChild(userElement);
-            }
+		
+		if (this.slackMessages.length > 0) {
+      			if (this.config.messageMode == 'random')
+        		var messageId = Math.floor(Math.random() * this.slackMessages.length);
+     		 else if (this.config.messageMode == 'latest')
+        		var messageId = 0;
+      			messageElement.innerHTML = this.slackMessages[messageId].message;
+      			if (this.config.showUserName) {
+        			var userElement = document.createElement('p');
+        			userElement.className = 'user';
+        			userElement.innerHTML = '@' + this.slackMessages[messageId].user;
+        			messageElement.appendChild(userElement);
+      			}
 		}
 		return messageElement;
 	}
