@@ -50,6 +50,7 @@ Module.register('MMM-Slack',{
             if(this.config.showUserName) {
                 var userElement = document.createElement('p');
                 userElement.className = 'user';
+		userElement.style.fontSize = this.config.fontSize;
                 userElement.innerHTML = '@' + this.slackMessages[randomMessageId].user;
 			    messageElement.appendChild(userElement);
             }
