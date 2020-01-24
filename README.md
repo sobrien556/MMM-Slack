@@ -19,7 +19,7 @@ Add the module to the modules array in the config/config.js file by adding the f
 
 	{
 		module: 'MMM-Slack',
-		position: 'lower_third',
+		position: 'top_left',
 		config: {
 			slackToken: 'YOUR_SLACK_TOKEN_GOES_HERE',
 			slackChannel: 'THE_CHANNEL_YOU_WANT_MESSAGES_FROM'
