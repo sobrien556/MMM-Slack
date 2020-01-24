@@ -9,7 +9,7 @@ Remote into your MagicMirror box using a terminal software and go to the applica
 
 Clone the repository:
 
-	git clone https://github.com/nrkno/MMM-Slack
+	git clone https://github.com/sobrien556/MMM-Slack
 	
 Install dependencies:
 
