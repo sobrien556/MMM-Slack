@@ -1,6 +1,10 @@
 .user {
     font-size: 15px;
     color: silver;
-    max-width: 25%;
-    word-wrap: break-word;
 } 
+
+.message {
+    font-size: 25px;
+    color: silver;
+    max-width: 25%;  
+}
