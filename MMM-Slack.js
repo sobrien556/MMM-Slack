@@ -2,6 +2,7 @@ Module.register('MMM-Slack',{
 	defaults: {
         showLatestMessageOnStartup: false,
         showUserName: true,
+	messageMode: 'latest',
 	width: "400px",
 	height: "400px",
 	fontSize: "10px",
