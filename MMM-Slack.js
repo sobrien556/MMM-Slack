@@ -32,13 +32,12 @@ Module.register('MMM-Slack',{
 	},
 
 	getDom: function() {			
-		var wrapper = document.createElement("div");
-         	wrapper.className = "wrapper";
-         	wrapper.style.maxWidth = this.config.maxWidth;
-		
+         	
 		var messageElement = document.createElement('div');
 		messageElement.className = 'light xlarge';
-		if(this.slackMessages.length > 0)		
+		messageElement.style.maxWidth = this.config.maxWidth;
+		if(this.slackMessages.length > 0)
+			
 		{
             var randomMessageId = Math.floor(Math.random() * this.slackMessages.length);
             messageElement.innerHTML = this.slackMessages[randomMessageId].message;
