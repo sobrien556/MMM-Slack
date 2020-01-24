@@ -2,11 +2,13 @@
     font-size: 15px;
     color: silver;
     word-spacing: 2px;
+    letter-spacing: 2px;
 } 
 
 .message {
     font-size: 15px;
     color: silver;
     word-spacing: 2px;
-    max-width: 25%;  
+    max-width: 25%;
+    letter-spacing: 2px;
 }
