@@ -3,6 +3,7 @@
     color: silver;
     word-spacing: 2px;
     letter-spacing: 2px;
+    line-height: 1.2;
 } 
 
 .message {
@@ -11,4 +12,5 @@
     word-spacing: 2px;
     max-width: 25%;
     letter-spacing: 2px;
+    line-height: 1.2;
 }
