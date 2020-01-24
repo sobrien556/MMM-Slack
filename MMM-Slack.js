@@ -7,7 +7,7 @@ Module.register('MMM-Slack',{
 	fontSize: "10px",
 	wordSpacing: "3px",
 	letterSpacing: "2px",
-	lineHeight: 1.2
+	lineHeight: "3px"
 	},
 	
 	getStyles: function() {
