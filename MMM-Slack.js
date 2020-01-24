@@ -2,9 +2,10 @@ Module.register('MMM-Slack',{
 	defaults: {
         showLatestMessageOnStartup: false,
         showUserName: true,
-	maxWidth: "400px",
+	width: "400px",
+	height: "400px",
 	fontSize: "10px",
-	wordSpacing: "1px"
+	wordSpacing: "3px"
 	},
 	
 	getStyles: function() {
@@ -37,7 +38,8 @@ Module.register('MMM-Slack',{
          	
 		var messageElement = document.createElement('div');
 		messageElement.className = 'light xlarge';
-		messageElement.style.maxWidth = this.config.maxWidth;
+		messageElement.style.width = this.config.width;
+		messageElement.style.height = this.config.height;
 		messageElement.style.fontSize = this.config.fontSize;
 		messageElement.style.wordSpacing = this.config.wordSpacing;
 		if(this.slackMessages.length > 0)
