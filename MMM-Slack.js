@@ -2,7 +2,8 @@ Module.register('MMM-Slack',{
 	defaults: {
         showLatestMessageOnStartup: false,
         showUserName: true,
-	maxWidth: "400px"
+	maxWidth: "400px",
+	fontSize: "10px"
 	},
 	
 	getStyles: function() {
@@ -36,6 +37,7 @@ Module.register('MMM-Slack',{
 		var messageElement = document.createElement('div');
 		messageElement.className = 'light xlarge';
 		messageElement.style.maxWidth = this.config.maxWidth;
+		messageElement.style.fontSize = this.config.fontSize;
 		if(this.slackMessages.length > 0)
 			
 		{
