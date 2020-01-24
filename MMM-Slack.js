@@ -6,7 +6,8 @@ Module.register('MMM-Slack',{
 	height: "400px",
 	fontSize: "10px",
 	wordSpacing: "3px",
-	letterSpacing: "2px"
+	letterSpacing: "2px",
+	lineHeight: 1.2
 	},
 	
 	getStyles: function() {
@@ -44,6 +45,7 @@ Module.register('MMM-Slack',{
 		messageElement.style.fontSize = this.config.fontSize;
 		messageElement.style.wordSpacing = this.config.wordSpacing;
 		messageElement.style.letterSpacing = this.config.letterSpacing;
+		messageElement.style.lineHeight = this.config.lineHeight;
 		if(this.slackMessages.length > 0)
 			
 		{
