@@ -1,7 +1,8 @@
 Module.register('MMM-Slack',{
 	defaults: {
         showLatestMessageOnStartup: false,
-        showUserName: true
+        showUserName: true,
+	maxWidth: "400px"
 	},
 	
 	getStyles: function() {
@@ -34,6 +35,11 @@ Module.register('MMM-Slack',{
 		var messageElement = document.createElement('div');
 		messageElement.className = 'light xlarge';
 		if(this.slackMessages.length > 0)
+			
+		var wrapper = document.createElement("div");
+         	wrapper.className = "wrapper";
+         	wrapper.style.maxWidth = this.config.maxWidth;
+		
 		{
             var randomMessageId = Math.floor(Math.random() * this.slackMessages.length);
             messageElement.innerHTML = this.slackMessages[randomMessageId].message;
